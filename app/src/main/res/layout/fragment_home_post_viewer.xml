@@ -52,7 +52,7 @@
                     android:layout_gravity="center_vertical"/>
             </LinearLayout>
 
-            <my.insta.androrealm.Utils.SquareImageView
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/fragment_home_post_viewer_post_image"

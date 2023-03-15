@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/MessageActivity_text_send"
-            android:textSize="16sp"
+            android:textSize="30sp"
             android:padding="10dp"
             android:textColor="@color/black"
             android:layout_marginStart="10dp"
@@ -84,7 +84,8 @@
             android:hint="Type a message..."
             android:layout_toStartOf="@id/MessageActivity_btn_send"
             android:layout_centerVertical="true"
-            android:inputType="textMultiLine"/>
+            android:inputType="textMultiLine"
+            />
 
         <TextView
             android:layout_width="wrap_content"

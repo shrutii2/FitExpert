@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/instagram"
         android:text="Instagram"
-        android:fontFamily="@font/bilbo_swash_caps"
+
         android:textStyle="bold"
         android:textSize="50sp"
         android:textColor="@color/black"
@@ -29,8 +29,8 @@
         android:layout_marginTop="15dp"
         android:paddingEnd="15dp"
         android:paddingStart="15dp"
-        android:layout_below="@id/instagram">
-        <com.google.android.material.textfield.TextInputEditText
+        android:layout_below="@id/instagram"/>
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawablePadding="10dp"
@@ -38,8 +38,10 @@
             android:textColor="@color/black"
             android:textColorHint="@color/instacenterclord"
             android:backgroundTint="@color/instacenterclord"
-            android:inputType="textEmailAddress"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:inputType="textEmailAddress"
+            android:textSize="20dp"/>
+
+
 
     <!--*******password**********-->
     <com.google.android.material.textfield.TextInputLayout

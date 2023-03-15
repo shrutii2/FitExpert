@@ -78,6 +78,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="75">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,90 +95,94 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="70dp"
+                        android:layout_weight="33"
                         android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_weight="33">
+                        android:padding="5dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@android:color/transparent"
-                            android:textSize="20sp"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
                             android:id="@+id/UserSearchProfile_txtPosts"
-                            android:layout_marginTop="10dp"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
                             android:text="Posts"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="16sp"
-                            android:textColor="@color/textcolor"/>
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="70dp"
                         android:id="@+id/UserSearchProfile_noFollowers"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_weight="33">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@android:color/transparent"
-                            android:textSize="20sp"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:id="@+id/UserSearchProfile_txtFollowers"
-                            android:layout_marginTop="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Followers"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="16sp"
-                            android:textColor="@color/textcolor"/>
-
-
-                    </LinearLayout>
-                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="70dp"
-                        android:id="@+id/UserSearchProfile_noFollowing"
+                        android:layout_weight="33"
                         android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_weight="33">
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/UserSearchProfile_txtFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
                             android:layout_gravity="center_horizontal"
-                            android:background="@android:color/transparent"
-                            android:textSize="20sp"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:id="@+id/UserSearchProfile_txtFollowing"
-                            android:layout_marginTop="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Following"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="16sp"
-                            android:textColor="@color/textcolor"/>
+                            android:text="Followers"
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp" />
 
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/UserSearchProfile_noFollowing"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="33"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/UserSearchProfile_txtFollowing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Following"
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -194,48 +199,50 @@
                         android:layout_weight="50">
 
                         <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
                             android:id="@+id/UserSearchProfile_Followbtn"
-                            android:background="@drawable/blue_button"
-                            android:text="Follow"
-                            android:textColor="@color/white"
-                            android:textAllCaps="false"
-                            android:textSize="16sp"/>
-                        <Button
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/blue_button"
+                            android:clickable="false"
+                            android:text="Follow"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <Button
                             android:id="@+id/UserSearchProfile_Followingbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
                             android:background="@drawable/btn_shape_1"
                             android:text="Following"
                             android:textAllCaps="false"
-                            android:textSize="16sp"/>
+                            android:textSize="20dp" />
 
                     </RelativeLayout>
 
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:id="@+id/UserSearchProfile_messages"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="50"
                         android:background="@drawable/btn_shape_1"
                         android:text="Message"
                         android:textAllCaps="false"
-                        android:textSize="16sp"
-                        android:layout_weight="50"
-                        android:layout_marginStart="10dp"/>
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
 
-<!--                <Button-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="25dp"-->
-<!--                    android:id="@+id/edit_profile"-->
-<!--                    android:background="@drawable/btn_shape_1"-->
-<!--                    android:text="Edit Profile"-->
-<!--                    android:textAllCaps="false"-->
-<!--                    android:textSize="18sp"-->
-<!--                    android:layout_gravity="end"/>-->
+                <!--                <Button-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:id="@+id/edit_profile"-->
+                <!--                    android:background="@drawable/btn_shape_1"-->
+                <!--                    android:text="Edit Profile"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textSize="18sp"-->
+                <!--                    android:layout_gravity="end"/>-->
 
             </LinearLayout>
 
@@ -291,19 +298,24 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/UserSearchProfile_hr"
         android:id="@+id/relative1">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
 
-        <GridView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:numColumns="3"
-            android:id="@+id/UserSearchProfile_gridview1"
-            android:verticalSpacing="1dp"
-            android:horizontalSpacing="1dp"
-            android:stretchMode="columnWidth"
-            android:gravity="center">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:id="@+id/UserSearchProfile_gridview1"
+                android:verticalSpacing="1dp"
+                android:horizontalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center">
 
-        </GridView>
-
+            </GridView>
+        </ScrollView>
     </RelativeLayout>
 
     <ProgressBar

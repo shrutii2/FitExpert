@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -19,6 +20,7 @@ public class ChatActivity extends AppCompatActivity {
     private PageAdapter pageAdapter;
     private TabLayout tabLayout;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,4 +39,6 @@ public class ChatActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
+
+
 }

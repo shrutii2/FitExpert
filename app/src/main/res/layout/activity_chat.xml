@@ -18,11 +18,12 @@
             android:background="@color/white">
         </androidx.appcompat.widget.Toolbar>
 
-        <com.google.android.material.tabs.TabLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ChatActivity_maintabs"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            tools:ignore="MissingClass" />
 
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -32,7 +33,9 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/ChatActivity_Appbar"
         android:id="@+id/ChatActivity_mainTabPager"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
 
     </androidx.viewpager.widget.ViewPager>
 

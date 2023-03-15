@@ -30,7 +30,7 @@
             android:inputType="number"
             android:hint="OTP"
             android:layout_marginTop="25dp"
-            android:textSize="18sp"/>
+            android:textSize="20dp"/>
 
         <Button
             android:id="@+id/Verify"
